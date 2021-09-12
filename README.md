@@ -2,7 +2,7 @@
 
 `hmcc` is a wrapper for the Autocode Halo MCC API.
 
-This module uses `async/await` and provides a simplistic layer to access JSON data from Halo Waypoint.
+This module uses `async/await` and provides a simplistic way to access JSON data from Halo Waypoint.
 This data is available on the web at 343's [Halo Waypoint Service Record](https://www.halowaypoint.com/en-gb/games/halo-the-master-chief-collection/xbox-one/service-records/players) web-app.
 
 ## Getting Started
@@ -38,8 +38,8 @@ The provided methods are listed below:
 
 Also provided are two enums to help with parameters:
 
-* [Game](https://github.com/jds64/hmcc/blob/eddf409f4d36643a8d9f0aa6bb157ef44e82f6d7/src/index.js#L4-L17) - Contains enumerated game (title) IDs.
-* [GameVariant](https://github.com/jds64/hmcc/blob/eddf409f4d36643a8d9f0aa6bb157ef44e82f6d7/src/index.js#L19-L43) - Contains enumerated multiplayer gametypes (variants).
+* [Game](https://github.com/jds64/hmcc/blob/main/src/index.js#L4-L17) - Contains enumerated game (title) IDs.
+* [GameVariant](https://github.com/jds64/hmcc/blob/main/src/index.js#L19-L43) - Contains enumerated multiplayer gametypes (variants).
 
 ## Usage
 
@@ -48,6 +48,5 @@ Also provided are two enums to help with parameters:
 getStats(gamertag: string)
 getLatestGame(gamertag: string, game: Game, gameVariant: GameVariant)
 getGameHistory(gamertag: string, game: Game, gameVariant: GameVariant)
-getSquadActivity(gamertags: ...string[], minSquadSize: number, game: Game)
-
+getSquadActivity(gamertags: string[], minSquadSize: number, game: Game)
 ```
