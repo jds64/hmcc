@@ -17,7 +17,7 @@ const hmcc = require('hmcc')
 // esm
 import hmcc from 'hmcc'
 
-const stats = await getStats('yourGamertagHere')
+const stats = await hmcc.getStats('yourGamertagHere')
 
 console.log(stats)
 
