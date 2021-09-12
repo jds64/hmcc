@@ -1,0 +1,30 @@
+{
+  "name": "hmcc",
+  "version": "0.0.1",
+  "description": "A simple utility to get stats about players from Windows/Steam versions of Halo: The Master Chief Collection.",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=14"
+  },
+  "exports": {
+    "import": "./src/index.mjs",
+    "node": "./src/index.js"
+  },
+  "scripts": {
+    "test": "echo There are no tests."
+  },
+  "keywords": [
+    "halo",
+    "Halo - The Master Chief Collection",
+    "hmcc",
+    "mcc",
+    "halo api",
+    "haloapi",
+    "halo pc api"
+  ],
+  "author": "JDS (J. D. Stubbs)",
+  "license": "ISC",
+  "dependencies": {
+    "lib": "^4.3.3"
+  }
+}
